@@ -2,12 +2,8 @@
 	border-radius: 0.4rem;
 	outline: 0;
 	margin: 0 0.2rem 0 0;
-	-webkit-transition: background-color .2s,-webkit-box-shadow .5s;
-	transition: background-color .2s,-webkit-box-shadow .5s;
-	transition: background-color .2s,box-shadow .5s;
-	transition: background-color .2s,box-shadow .5s,-webkit-box-shadow .5s;
+	transition: background-color .2s,box-shadow .5s,border .5s;
 	transition-timing-function: ease, ease, ease;
-	-webkit-transition-timing-function: cubic-bezier(.39,.575,.565,1);
 	transition-timing-function: cubic-bezier(.39,.575,.565,1);	
 }
 
@@ -41,8 +37,8 @@
 }
 
 #app-sidenav > a:hover{
-    border-color = #5faaea;
-    background-color = #fff;
+    border-color:#5faaea;
+    background-color:#f1f1f1;
 }
 
 #app-sidenav{
@@ -68,4 +64,69 @@
 
 .popup-button {
     color:#34495e;
+}
+
+/* 提交区域的按钮 */
+#psummary>p>.am-btn{
+    /*! border-color: #d11845 !important; */
+    /*     box-shadow: none; */
+    /*     background-color: transparent; */
+        text-align: left;
+    /*     display: table; */
+        margin: 0rem 0.5rem 0 0.5rem;
+        width: 45%;
+        padding: .85rem .9375rem;
+        border-radius: 0;
+        outline: 0;
+        line-height: 2.3rem;
+        color: #555;
+        border: 0 solid transparent;
+    /*     border-left: 3px solid transparent; */
+        position: relative;
+    }
+    
+#psummary>p>.am-btn[title]{
+    background-color: #f1f1f1;
+    color: #555;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+}
+
+#psummary>p>.am-btn[title]:hover{
+    border-bottom: 3px solid #555;
+}
+
+#psummary>p>.am-btn-danger{
+    margin: -1rem 0 1rem -1rem;
+    width: 107%;
+    background: #ed5f82;
+    color:#fff;
+    border-left: 3px solid #d11845;
+}
+
+#psummary>p>.am-btn-primary[target]{
+    margin: -1rem 0 1rem -1rem;
+    width: 107%;
+    background: rgb(47, 144, 209);
+    color:#fff;
+    border-left: 3px solid #0075d8;
+}
+    
+    
+
+div[name=problemright] > div{
+    box-shadow: 0 4px 15px rgba(92, 92, 92, 0.3);
+}
+
+div[name=problemright]{
+    padding-left: 4rem;
+}
+
+div[name=problemright] section{
+    box-shadow: 0 4px 15px rgba(92, 92, 92, 0.3);
+    border-radius: 2px;
+}
+
+#psummary{
+    font-family: Open Sans,Seravek,Segoe UI,Verdana,PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,"sans-serif";
 }
